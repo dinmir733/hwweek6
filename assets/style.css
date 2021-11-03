@@ -1,4 +1,4 @@
-.body {  
+body {  
     font-family: 'Inter', sans-serif;
     font-style: normal;
     min-height: 100vh;
@@ -8,7 +8,8 @@
     background: white;
     grid-area: header;
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-columns: 60% 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: "logo header-img header-nav ";
 }
 .logotip{
@@ -55,10 +56,11 @@
 }
 .container{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    width: auto;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 10% 1fr 10%;
+    min-width: 100vw;
     height: auto;
-    grid-template-areas: "header header header header"
-    " main main main"
-    "footer footer footer footer";
+    grid-template-areas: "header"
+    " main "
+    "footer ";
 }
