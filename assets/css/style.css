@@ -1,0 +1,41 @@
+
+.header{
+    background: white;
+    grid-area: header;
+}
+.header__link {
+    text-decoration: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color:#000000;
+    
+}
+.header__link:hover{
+    text-decoration: underline;
+    
+}
+
+.main{
+    background: wheat;
+    grid-area: main;
+}
+.footer{
+    background: white;
+    grid-area: footer;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: repeat(16. auto) ;
+    height: auto;
+    grid-template-areas: "header header header header"
+    "sidebar main main main"
+    "footer footer footer footer";
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+}
